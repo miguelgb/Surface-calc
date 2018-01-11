@@ -3,13 +3,13 @@ BRANCH := master
 COMMENTS := "Comment"
 
 mastermainpush: 
-	git add $(FILES)
+	git init
+	git add *.py
 	git commit -m $(COMMENTS)
 	git checkout $(BRANCH)
 	git fetch
 	git remote -v && git push
 	echo $(COMMENTS)
-	git init
 
 clean:
 	rm -f ./.git/index.lock
