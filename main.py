@@ -20,3 +20,5 @@ for i,j in zip(x[1:],y[1:]):
  xi, yi = i, j
 area = abs(area/2)
 print "Area:",area
+
+#22
